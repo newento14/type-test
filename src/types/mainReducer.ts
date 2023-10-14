@@ -4,13 +4,13 @@ export enum ActionTypes {
 }
 
 export interface IState {
-    words: string[],
+    words: string,
     status: number,
 }
 
 export interface FetchSetWordsAction {
     type: ActionTypes.SET_WORDS,
-    payload: string[],
+    payload: string,
 }
 export interface  FethcSetStatusAction{
     type: ActionTypes.SET_STATUS,

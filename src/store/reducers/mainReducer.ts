@@ -1,7 +1,7 @@
 import {Actions, ActionTypes, IState} from "../../types/mainReducer";
 
 const defaultState: IState = {
-    words: [],
+    words: "",
     status: 0,
 }
 
