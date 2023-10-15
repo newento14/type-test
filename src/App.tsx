@@ -123,8 +123,8 @@ function App() {
 
             {status === 2 && (
                 <div className="mt-15">
-                    <p className="text-gray-300 text-2xl">Літер на хвилину: {lpm}</p>
-                    <p className="text-gray-300 text-2xl">Слів на хвилину: {wpm}</p>
+                    <p className="text-gray-300 text-2xl">LPM: {lpm}</p>
+                    <p className="text-gray-300 text-2xl">WPM: {wpm}</p>
                 </div>
             )}
         </div>
