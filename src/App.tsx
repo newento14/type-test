@@ -23,6 +23,9 @@ function App() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    if (status === 1) {
+      setMistakes(0);
+    }
     if (status === 0 || status === 2) {
       setCursorPosition(0);
       setCorrectArray([]);
@@ -75,7 +78,7 @@ function App() {
 
   return (
     <div className="w-[100vw] h-[100vh] flex bg-[#323435] justify-center items-center min-h-[500px] min-w-[500px] flex-col px-16">
-      <Timer time={30}/>
+      <Timer time={5}/>
       <div
         className="flex flex-wrap select-none relative mt-2"
         onClick={() => {
@@ -129,7 +132,7 @@ function App() {
         </button>
       </div>
 
-      <Modal wordsPerMinute={wpm} letterPerMinute={lpm} mistakes={mistakes} modalVisible={modalVisible} setModalVisible={setModalVisible}/>
+      <Modal wordsPerMinute={wpm} letterPerMinute={lpm} mistakes={mistakes + 1} modalVisible={modalVisible} setModalVisible={setModalVisible}/>
     </div>
   );
 }
