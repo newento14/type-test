@@ -33,6 +33,7 @@ function App() {
 
       if (status === 2) {
         getResult();
+        inputRef.current?.blur();
       }
 
       const generatedWords = generate({exactly: 100, minLength: 2, maxLength: 9}).join(' ');
@@ -78,7 +79,7 @@ function App() {
 
   return (
     <div className="w-[100vw] h-[100vh] flex bg-[#323435] justify-center items-center min-h-[500px] min-w-[500px] flex-col px-16">
-      <Timer time={5}/>
+      <Timer time={30}/>
       <div
         className="flex flex-wrap select-none relative mt-2"
         onClick={() => {
