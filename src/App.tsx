@@ -74,7 +74,7 @@ function App() {
   }
 
   return (
-    <div className="mt-20 ml-20 mr-20">
+    <div className="w-[100vw] h-[100vh] flex justify-center items-center min-h-[500px] min-w-[500px] flex-col px-16">
       <Timer time={30}/>
       <div
         className="flex flex-wrap select-none relative mt-2"
