@@ -74,7 +74,7 @@ function App() {
   }
 
   return (
-    <div className="w-[100vw] h-[100vh] flex justify-center items-center min-h-[500px] min-w-[500px] flex-col px-16">
+    <div className="w-[100vw] h-[100vh] flex bg-[#323435] justify-center items-center min-h-[500px] min-w-[500px] flex-col px-16">
       <Timer time={30}/>
       <div
         className="flex flex-wrap select-none relative mt-2"
@@ -115,7 +115,7 @@ function App() {
               ) : (
                 <div className="text-2xl w-3.5 text-gray-500 select-none p-0 ml-0 relative">
                   {char}
-                  {index === cursorPosition && <div className="cursor"></div>}
+                  {index === cursorPosition && <div className="cursor bg-[#e2bb40]"></div>}
                 </div>
               )}
             </div>
